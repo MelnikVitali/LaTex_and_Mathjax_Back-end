@@ -1,0 +1,15 @@
+node_modules/
+package-lock.json
+yarn.lock
+.idea
+*.log
+*.png
+*.webp
+*.pdf
+*.doc
+*.docx
+*.xls
+*.xlsx
+.env
+
+
