@@ -2,12 +2,12 @@
   "name": "guestbook-backend",
   "version": "1.0.0",
   "author": "Vitalii Melnyk",
-  "description": "guestbook - test task",
+  "description": "latex and mathjax",
   "license": "ISC",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MelnikVitali/Guestbook-backend.git"
+    "url": "git+https://github.com/MelnikVitali/LaTex_and_Mathjax_Back-end"
   },
   "type": "module",
   "main": "server.js",
@@ -26,6 +26,7 @@
     "hpp": "^0.2.3",
     "joi": "^17.4.0",
     "mongoose": "^5.12.10",
+    "multer": "^1.4.3",
     "xss-clean": "^0.1.1"
   },
   "devDependencies": {
