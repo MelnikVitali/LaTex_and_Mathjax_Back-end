@@ -1,15 +1,11 @@
-import { Router } from "express";
+import { Router } from 'express';
 
-import CommentController from "./controllers/CommentController.js";
-import { commentValidationMiddleware } from "./middlewares/commentValidationMiddleware.js";
+import UploadController from './controllers/uploadController.js';
+import { isFileNameSpacesMiddleware } from './validators/fileNameSpacesMiddleware.js';
 
 const router = new Router();
 
 //comments
-router.post("/comments", commentValidationMiddleware, CommentController.create);
-router.get("/comments", CommentController.getAll);
-router.get("/comments/:id", CommentController.getOne);
-router.put("/comments", CommentController.update);
-router.delete("/comments/:id", CommentController.delete);
+router.post('/upload', isFileNameSpacesMiddleware, UploadController.uploadFile);
 
 export default router;
