@@ -12,7 +12,8 @@
   "type": "module",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start:dev": "node server.js",
+    "start": "sudo apt-get install latexml && node server.js",
     "dev": "nodemon server"
   },
   "dependencies": {
